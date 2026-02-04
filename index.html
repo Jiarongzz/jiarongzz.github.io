@@ -1,124 +1,127 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Jiarong (Jay) Zhang</title>
   <meta name="description" content="Applied Data Science · SQL · Python · ETL · Dashboards"/>
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
 
-  <header class="container">
-    <nav class="nav">
-      <a class="logo" href="#">Jay Zhang</a>
+<header class="container">
 
-      <div class="links">
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a class="btn" href="#contact">Contact</a>
+  <nav class="nav">
+    <div class="logo">Jay Zhang</div>
+
+    <div class="navlinks">
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a class="btn" href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <p class="eyebrow">Applied Data Science · Syracuse University</p>
+
+    <h1>
+      Building simple,<br/>
+      practical <span class="accent">data tools</span>
+    </h1>
+
+    <p class="subtitle">
+      SQL · Python · ETL · Dashboards · Streamlit  
+      Turning messy data into useful decisions.
+    </p>
+
+    <div class="actions">
+      <a class="btn" href="#projects">View Work</a>
+      <a class="ghost" href="./resume.pdf">Resume</a>
+    </div>
+  </section>
+
+</header>
+
+
+<main class="container">
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>UniBrow Dataset Browser</h3>
+        <p>Streamlit app for exploring and summarizing datasets quickly.</p>
+        <span class="meta">Python · Streamlit</span>
       </div>
-    </nav>
 
-    <section class="hero">
-      <p class="eyebrow">Applied Data Science · Syracuse University</p>
-
-      <h1>
-        I build clean, practical<br/>
-        <span class="accent">data tools & dashboards</span>
-      </h1>
-
-      <p class="subtitle">
-        SQL • Python • ETL • Streamlit • Analytics  
-        Turning messy data into useful decisions.
-      </p>
-
-      <div class="hero-actions">
-        <a class="btn" href="#projects">View Work</a>
-        <a class="ghost" href="./resume.pdf">Resume</a>
+      <div class="card">
+        <h3>Parking Tickets Dashboard</h3>
+        <p>Interactive map visualization for hotspots and trends.</p>
+        <span class="meta">Dashboard · Maps</span>
       </div>
-    </section>
-  </header>
 
-
-  <main class="container">
-
-    <!-- Projects -->
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-
-      <div class="grid">
-
-        <div class="card">
-          <h3>UniBrow Dataset Browser</h3>
-          <p>Lightweight Streamlit app for exploring and summarizing datasets.</p>
-          <div class="meta">Python · Streamlit</div>
-        </div>
-
-        <div class="card">
-          <h3>Parking Tickets Dashboard</h3>
-          <p>Interactive map visualization for hotspots and time trends.</p>
-          <div class="meta">Streamlit · Maps</div>
-        </div>
-
-        <div class="card">
-          <h3>Bills ETL Pipeline</h3>
-          <p>Automated currency conversion + cleaning for analysis-ready tables.</p>
-          <div class="meta">ETL · API · Pandas</div>
-        </div>
-
-        <div class="card">
-          <h3>SQL Data Modeling (TA)</h3>
-          <p>Normalization, schema design, and query optimization examples.</p>
-          <div class="meta">SQL · Relational Modeling</div>
-        </div>
-
+      <div class="card">
+        <h3>Bills ETL Pipeline</h3>
+        <p>Automated currency conversion and cleaning workflow.</p>
+        <span class="meta">ETL · API · Pandas</span>
       </div>
-    </section>
 
-
-    <!-- Experience -->
-    <section id="experience" class="section">
-      <h2>Experience</h2>
-
-      <div class="stack">
-        <div class="card">
-          <h3>Teaching Assistant — SQL</h3>
-          <p class="muted">Syracuse University</p>
-        </div>
-
-        <div class="card">
-          <h3>Applied Data Science Projects</h3>
-          <p class="muted">Pipelines · Dashboards · Analytics</p>
-        </div>
+      <div class="card">
+        <h3>SQL Data Modeling (TA)</h3>
+        <p>Schema design, normalization, and query optimization examples.</p>
+        <span class="meta">SQL · Relational Modeling</span>
       </div>
-    </section>
+
+    </div>
+  </section>
 
 
-    <!-- Skills -->
-    <section id="skills" class="section">
-      <h2>Skills</h2>
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <h2>Experience</h2>
 
-      <div class="tags">
-        <span>SQL</span><span>Python</span><span>ETL</span>
-        <span>Pandas</span><span>Streamlit</span><span>Git</span>
+    <div class="stack">
+      <div class="card">
+        <h3>Teaching Assistant — SQL</h3>
+        <p class="muted">Syracuse University</p>
       </div>
-    </section>
+
+      <div class="card">
+        <h3>Applied Data Science Projects</h3>
+        <p class="muted">Pipelines · Dashboards · Analytics</p>
+      </div>
+    </div>
+  </section>
 
 
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p class="muted">your-email@syr.edu · GitHub · LinkedIn</p>
-    </section>
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
 
-  </main>
+    <div class="tags">
+      <span>SQL</span><span>Python</span><span>Pandas</span>
+      <span>ETL</span><span>Streamlit</span><span>Git</span>
+    </div>
+  </section>
 
-  <footer class="container foot">
-    © 2026 Jiarong Zhang
-  </footer>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p class="muted">your-email@syr.edu · GitHub · LinkedIn</p>
+  </section>
+
+</main>
+
+
+<footer class="footer">
+  © 2026 Jiarong Zhang
+</footer>
 
 </body>
 </html>
