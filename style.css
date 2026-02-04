@@ -1,0 +1,198 @@
+/* ===== 极简深灰配色 ===== */
+
+:root{
+  --bg:#1f2125;
+  --surface:#2a2d32;
+  --border:#35383e;
+
+  --text:#f2f2f2;
+  --muted:#a5a7ac;
+
+  --accent:#7aa2ff;
+}
+
+/* ===== base ===== */
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:40px 20px;
+}
+
+/* ===== nav ===== */
+
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:80px;
+}
+
+.logo{
+  font-weight:600;
+  letter-spacing:.5px;
+}
+
+.links{
+  display:flex;
+  gap:24px;
+}
+
+.links a{
+  color:var(--muted);
+  text-decoration:none;
+  font-size:14px;
+}
+
+.links a:hover{
+  color:var(--text);
+}
+
+/* ===== hero ===== */
+
+.hero{
+  margin-bottom:120px;
+}
+
+.eyebrow{
+  color:var(--muted);
+  font-size:14px;
+  margin-bottom:14px;
+}
+
+h1{
+  font-size:44px;
+  font-weight:600;
+  margin:0 0 20px 0;
+}
+
+.accent{
+  color:var(--accent);
+}
+
+.subtitle{
+  color:var(--muted);
+  max-width:500px;
+  margin-bottom:24px;
+}
+
+.hero-actions{
+  display:flex;
+  gap:16px;
+}
+
+/* ===== buttons ===== */
+
+.btn{
+  background:var(--accent);
+  color:white;
+  padding:10px 16px;
+  border-radius:8px;
+  text-decoration:none;
+  font-size:14px;
+}
+
+.ghost{
+  color:var(--muted);
+  text-decoration:none;
+  font-size:14px;
+}
+
+/* ===== sections ===== */
+
+.section{
+  margin-bottom:100px;
+}
+
+h2{
+  font-size:20px;
+  margin-bottom:24px;
+  font-weight:600;
+}
+
+/* ===== cards ===== */
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  padding:20px;
+  border-radius:10px;
+
+  transition:all .15s ease;
+}
+
+.card:hover{
+  transform:translateY(-3px);
+  border-color:var(--accent);
+}
+
+.card h3{
+  margin:0 0 8px 0;
+  font-size:16px;
+}
+
+.meta{
+  font-size:13px;
+  color:var(--muted);
+  margin-top:8px;
+}
+
+.muted{
+  color:var(--muted);
+}
+
+/* ===== skills ===== */
+
+.tags{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.tags span{
+  background:var(--surface);
+  border:1px solid var(--border);
+  padding:6px 12px;
+  border-radius:6px;
+  font-size:13px;
+  color:var(--muted);
+}
+
+/* ===== footer ===== */
+
+.foot{
+  text-align:center;
+  color:var(--muted);
+  font-size:13px;
+  padding-bottom:40px;
+}
+
+/* ===== mobile ===== */
+
+@media (max-width:768px){
+  .grid{
+    grid-template-columns:1fr;
+  }
+
+  h1{
+    font-size:32px;
+  }
+}
