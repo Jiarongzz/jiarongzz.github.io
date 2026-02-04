@@ -197,3 +197,41 @@ h2{
     font-size:32px;
   }
 }
+
+/* ===== Hero 双列布局 ===== */
+
+.hero{
+  display:grid;
+  grid-template-columns: 1fr auto;
+  align-items:center;
+  gap:48px;
+}
+
+/* ===== 头像大小严格限制 ===== */
+
+.portrait{
+  width:150px;      /* ⭐ 控制大小改这里 */
+  height:150px;
+
+  object-fit:cover;
+
+  border-radius:12px;
+  border:1px solid var(--border);
+}
+
+/* ===== 手机适配 ===== */
+
+@media (max-width:768px){
+  .hero{
+    grid-template-columns:1fr;
+  }
+
+  .hero-photo{
+    margin-top:20px;
+  }
+
+  .portrait{
+    width:120px;
+    height:120px;
+  }
+}
