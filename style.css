@@ -1,17 +1,17 @@
-/* ===== 极简深灰配色 ===== */
+/* ===== 极简浅灰主题 ===== */
 
 :root{
-  --bg:#1f2125;
-  --surface:#2a2d32;
-  --border:#35383e;
+  --bg:#f3f4f6;
+  --card:#ffffff;
+  --border:#e5e7eb;
 
-  --text:#f2f2f2;
-  --muted:#a5a7ac;
+  --text:#111827;
+  --muted:#6b7280;
 
-  --accent:#7aa2ff;
+  --accent:#2563eb;
 }
 
-/* ===== base ===== */
+/* base */
 
 *{
   box-sizing:border-box;
@@ -25,13 +25,15 @@ body{
   line-height:1.6;
 }
 
+/* layout */
+
 .container{
-  max-width:900px;
+  max-width:880px;
   margin:auto;
   padding:40px 20px;
 }
 
-/* ===== nav ===== */
+/* nav */
 
 .nav{
   display:flex;
@@ -42,25 +44,25 @@ body{
 
 .logo{
   font-weight:600;
-  letter-spacing:.5px;
+  font-size:15px;
 }
 
-.links{
+.navlinks{
   display:flex;
-  gap:24px;
+  gap:26px;
 }
 
-.links a{
+.navlinks a{
   color:var(--muted);
   text-decoration:none;
   font-size:14px;
 }
 
-.links a:hover{
+.navlinks a:hover{
   color:var(--text);
 }
 
-/* ===== hero ===== */
+/* hero */
 
 .hero{
   margin-bottom:120px;
@@ -73,7 +75,7 @@ body{
 }
 
 h1{
-  font-size:44px;
+  font-size:42px;
   font-weight:600;
   margin:0 0 20px 0;
 }
@@ -88,20 +90,20 @@ h1{
   margin-bottom:24px;
 }
 
-.hero-actions{
+.actions{
   display:flex;
   gap:16px;
 }
 
-/* ===== buttons ===== */
+/* buttons */
 
 .btn{
-  background:var(--accent);
+  background:var(--text);
   color:white;
   padding:10px 16px;
-  border-radius:8px;
-  text-decoration:none;
+  border-radius:6px;
   font-size:14px;
+  text-decoration:none;
 }
 
 .ghost{
@@ -110,56 +112,55 @@ h1{
   font-size:14px;
 }
 
-/* ===== sections ===== */
+/* sections */
 
 .section{
   margin-bottom:100px;
 }
 
 h2{
-  font-size:20px;
-  margin-bottom:24px;
+  font-size:18px;
   font-weight:600;
+  margin-bottom:22px;
 }
 
-/* ===== cards ===== */
+/* cards */
 
 .grid{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:18px;
+  gap:16px;
 }
 
 .card{
-  background:var(--surface);
+  background:var(--card);
   border:1px solid var(--border);
-  padding:20px;
   border-radius:10px;
+  padding:18px;
 
-  transition:all .15s ease;
+  transition:.15s ease;
 }
 
 .card:hover{
-  transform:translateY(-3px);
-  border-color:var(--accent);
+  border-color:#d1d5db;
+  transform:translateY(-2px);
 }
 
 .card h3{
-  margin:0 0 8px 0;
-  font-size:16px;
+  margin:0 0 6px 0;
+  font-size:15px;
 }
 
 .meta{
   font-size:13px;
   color:var(--muted);
-  margin-top:8px;
 }
 
 .muted{
   color:var(--muted);
 }
 
-/* ===== skills ===== */
+/* skills */
 
 .tags{
   display:flex;
@@ -168,7 +169,7 @@ h2{
 }
 
 .tags span{
-  background:var(--surface);
+  background:white;
   border:1px solid var(--border);
   padding:6px 12px;
   border-radius:6px;
@@ -176,16 +177,16 @@ h2{
   color:var(--muted);
 }
 
-/* ===== footer ===== */
+/* footer */
 
-.foot{
+.footer{
   text-align:center;
+  padding:40px;
   color:var(--muted);
   font-size:13px;
-  padding-bottom:40px;
 }
 
-/* ===== mobile ===== */
+/* mobile */
 
 @media (max-width:768px){
   .grid{
