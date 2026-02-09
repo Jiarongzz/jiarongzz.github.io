@@ -1,210 +1,66 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Jiarong Zhang | Resume</title>
-  <meta name="description" content="Jiarong Zhang — Applied Data Science. SQL, Python, ETL, dashboards, Spark."/>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jiarong Zhang — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
-
 <body>
-<header class="container">
-  <nav class="nav">
-    <a class="brand" href="#top">Jiarong Zhang</a>
-    <div class="navlinks">
-      <a href="#summary">Summary</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a class="btn" href="#contact">Contact</a>
-    </div>
-  </nav>
 
-  <section id="top" class="hero">
-    <div>
-      <h1>Jiarong Zhang</h1>
-      <p class="sub">
-        Shenzhen, China · Syracuse, NY
-        <span class="dot">·</span>
-        <a href="mailto:jiarongzz@qq.com">jiarongzz@qq.com</a>
-        <span class="dot">·</span>
-        <a href="tel:+1 (315)254-9062">+1 (315)254-9062</a>
-        <span class="dot">·</span>
-        <a href="https://www.linkedin.com/in/jiarong-zhang/" target="_blank" rel="noopener">LinkedIn</a>
-        <span class="dot">·</span>
-        <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
-      </p>
-      <div class="actions">
-        <a class="btn" href="assets/files/2026-resume-outline.pdf" target="_blank" rel="noopener">Open PDF</a>
-        <a class="ghost" href="#projects">View Projects</a>
+  <!-- ===== 侧边栏 ===== -->
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <span class="logo">JZ</span>
+    </div>
+    <nav>
+      <a href="index.html" class="active">Home / Bio</a>
+      <a href="tolemi.html">Local — Tolemi</a>
+      <a href="meta.html">National — Meta</a>
+      <a href="huawei.html">International — Huawei</a>
+      <a href="speaker.html">Speaker Invitation</a>
+    </nav>
+    <div class="sidebar-footer">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="icon-sun">☀️</span>
+        <span class="icon-moon">🌙</span>
+      </button>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <!-- ===== 主内容 ===== -->
+  <main class="main">
+    <!-- Hero / Bio -->
+    <section class="hero">
+      <div class="hero-photo">
+        <img
+          src="assets/profile.jpg"
+          alt="Jiarong Zhang"
+          onerror="this.onerror=null;this.src='assets/avatar-placeholder.svg';"
+        />
       </div>
-    </div>
+      <div class="hero-text">
+        <h1>Jiarong Zhang</h1>
+        <p class="subtitle">Applied Data Science &nbsp;|&nbsp; SQL • Python • Data Engineering</p>
+        <p class="bio">
+          Jiarong Zhang is a senior at Syracuse University majoring in Applied Data Science.
+          He specializes in SQL, Python, and data engineering workflows, and currently serves
+          as a Teaching Assistant for a database systems course. He is passionate about applying
+          analytics and AI to solve real-world problems.
+        </p>
+        <a href="#" class="btn" title="Download PDF Portfolio">📄 Download PDF Portfolio</a>
+      </div>
+    </section>
 
-    <div class="hero-photo">
-      <img src="assets/images/suites.jpg" alt="Jiarong portrait" class="portrait">
-    </div>
+  </main>
 
-  </section>
-</header>
-
-<main class="container">
-
-  <!-- Professional Summary -->
-  <section id="summary" class="section">
-    <h2>Professional Summary</h2>
-    <p>
-      Applied Data Science student at <strong>Syracuse University</strong> with hands-on experience in
-      SQL, Python, ETL pipelines, dashboards, and big data processing. Strong foundation in relational
-      databases, data cleaning, and analytical reporting. Seeking Data Analyst / Data Engineering
-      internship opportunities for Summer 2026.
-    </p>
-  </section>
-
-  <!-- Technical Skills -->
-  <section id="skills" class="section">
-    <h2>Technical Skills</h2>
-
-    <div class="card">
-      <h3>Languages</h3>
-      <p class="muted">Python (pandas, numpy, streamlit), SQL</p>
-    </div>
-
-    <div class="card">
-      <h3>Data & Analytics</h3>
-      <p class="muted">ETL pipelines, data cleaning, API integration, dashboard development, exploratory data analysis, visualization</p>
-    </div>
-
-    <div class="card">
-      <h3>Big Data</h3>
-      <p class="muted">Spark (RDD, DataFrame — coursework)</p>
-    </div>
-
-    <div class="card">
-      <h3>Tools</h3>
-      <p class="muted">Git, VS Code, Streamlit Cloud, Excel</p>
-    </div>
-
-    <div class="card">
-      <h3>Concepts</h3>
-      <p class="muted">Relational modeling, normalization (3NF), indexing, statistics, prompt engineering (LLM)</p>
-    </div>
-  </section>
-
-  <!-- Academic Projects -->
-  <section id="projects" class="section">
-    <h2>Academic Projects</h2>
-
-    <div class="card">
-      <h3>Database Systems Projects (SQL)</h3>
-      <ul>
-        <li>Designed relational schemas and normalized databases up to 3NF</li>
-        <li>Wrote complex SQL queries using joins, aggregations, and window functions</li>
-        <li>Optimized query performance through indexing and schema design</li>
-        <li>Enforced primary/foreign key constraints to ensure data integrity</li>
-        <li>Debugged and validated database queries for multiple case studies</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>Data Analysis with Python</h3>
-      <ul>
-        <li>Processed and cleaned structured CSV datasets using pandas and numpy</li>
-        <li>Automated repetitive data-wrangling tasks through reusable scripts</li>
-        <li>Performed exploratory data analysis to identify trends and outliers</li>
-        <li>Generated summary statistics and visual insights for reporting</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>Data Reporting & Visualization</h3>
-      <ul>
-        <li>Built dashboards and reports to communicate analytical findings</li>
-        <li>Transformed raw datasets into clear visual summaries</li>
-        <li>Presented results to non-technical audiences using charts and tables</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>Big Data Analytics with Spark</h3>
-      <ul>
-        <li>Implemented distributed transformations using Spark RDD and DataFrame APIs</li>
-        <li>Performed aggregations and filtering on large-scale datasets</li>
-        <li>Compared local pandas vs distributed Spark workflows for performance</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Teaching Experience -->
-  <section id="experience" class="section">
-    <h2>Experience</h2>
-
-    <div class="card">
-      <h3>Teaching Assistant — SQL & Relational Databases</h3>
-      <ul>
-        <li>Led 2 weekly lab sessions supporting 6–7 students each</li>
-        <li>Guided students on joins, normalization, indexing, and query logic</li>
-        <li>Provided 1:1 debugging help for 20+ assignments</li>
-        <li>Explained database design and query optimization concepts</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>Early Professional Experience (Condensed)</h3>
-
-      <p class="role">Technical Translator</p>
-      <ul>
-        <li>Translated blockchain-related technical materials (~10,000+ words)</li>
-        <li>Conducted research and summarized industry updates for internal teams</li>
-      </ul>
-
-      <p class="role">HR Assistant</p>
-      <ul>
-        <li>Managed candidate communication and recruitment scheduling</li>
-        <li>Organized applicant data using Excel</li>
-      </ul>
-
-      <p class="role">Student Media Lead</p>
-      <ul>
-        <li>Led 7-person team managing weekly content publication</li>
-        <li>Coordinated writing, editing, and cross-team collaboration</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Education -->
-  <section id="education" class="section">
-    <h2>Education</h2>
-
-    <div class="card">
-      <h3>Bachelor of Science — Applied Data Science</h3>
-      <p class="muted">Syracuse University</p>
-      <p class="muted">GPA: 3.26 · Expected Graduation: Dec 2026</p>
-
-      <h4>Relevant Coursework</h4>
-      <p class="muted">SQL Databases · Python Programming · Applied Data Science · Big Data (Spark) · Data Reporting · Statistics</p>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <div class="card">
-      <p><strong>Email:</strong> <a href="mailto:jiarongzz@qq.com">your-email@syr.edu</a></p>
-      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jiarong-zhang/" target="_blank" rel="noopener">linkedin.com/in/your-linkedin</a></p>
-      <p class="muted small">PDF version: <a href="assets/files/2026-resume-outline.pdf" target="_blank" rel="noopener">Open</a></p>
-    </div>
-  </section>
-
-</main>
-
-<footer class="footer">
-  © <span id="year"></span> Jiarong Zhang
-</footer>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+  <script src="assets/script.js"></script>
 </body>
 </html>

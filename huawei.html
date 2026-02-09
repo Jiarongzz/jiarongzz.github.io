@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>International Letter — Huawei | Jiarong Zhang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header"><span class="logo">JZ</span></div>
+    <nav>
+      <a href="index.html">Home / Bio</a>
+      <a href="tolemi.html">Local — Tolemi</a>
+      <a href="meta.html">National — Meta</a>
+      <a href="huawei.html" class="active">International — Huawei</a>
+      <a href="speaker.html">Speaker Invitation</a>
+    </nav>
+    <div class="sidebar-footer">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="icon-sun">☀️</span>
+        <span class="icon-moon">🌙</span>
+      </button>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <main class="main">
+    <h1 class="page-title">International Letter — Huawei</h1>
+
+    <section class="letter-card">
+      <button class="btn btn-print" onclick="window.print()">🖨️ Print Letter</button>
+
+      <!-- REPLACE LETTER CONTENT BELOW -->
+      <div class="letter-content">
+        <p class="sender-address">
+          Jiarong Zhang<br />
+          123 University Ave<br />
+          Syracuse, NY 13210<br />
+          jzhan199@syr.edu
+        </p>
+
+        <p class="letter-date">January 9, 2026</p>
+
+        <p class="recipient-address">
+          Human Resources Department<br />
+          Huawei Technologies Co., Ltd.<br />
+          Bantian, Longgang District<br />
+          Shenzhen, Guangdong 518129, China
+        </p>
+
+        <p class="greeting">Dear Human Resources Team,</p>
+
+        <p>
+          I am currently a senior at Syracuse University in the United States, majoring in Applied Data 
+          Science. I am writing to apply for the Data Science Engineer position at Huawei. I am highly 
+          interested in using data and analytics to support real business decisions and contribute to large-scale 
+          products, and I believe my technical background and hands-on experience align well with this role.
+        </p>
+
+        <p>
+          I enjoy working closely with product and business teams to solve practical problems. I am particularly 
+          interested in turning raw data into actionable insights — identifying user behavior trends, improving 
+          operational efficiency, and supporting growth decisions with clear metrics. Growing up in Shenzhen, I 
+          am also familiar with the fast-paced technology and business environment in China, which helps me better 
+          understand local markets and user needs.
+        </p>
+
+        <p>
+        Through my coursework and projects, I have developed strong skills in SQL, Python, and data engineering
+         workflows. I have built ETL pipelines, cleaned and structured messy datasets, and designed dashboards and 
+         analytical tools to help users quickly understand key metrics and patterns. As a Teaching Assistant for a 
+         SQL course, I also strengthened my understanding of relational data modeling and learned how to explain co
+         mplex technical concepts clearly and effectively.
+        </p>
+
+        <p>
+         Thank you very much for your time and consideration. I look forward to the opportunity to further discuss 
+         how I can contribute to your team.
+        </p>
+
+        <p class="closing">
+          Sincerely,<br /><br />
+          <strong>Jiarong Zhang</strong>
+        </p>
+      </div>
+      <!-- END LETTER CONTENT -->
+    </section>
+  </main>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

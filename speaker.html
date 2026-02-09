@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Speaker Invitation | Jiarong Zhang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header"><span class="logo">JZ</span></div>
+    <nav>
+      <a href="index.html">Home / Bio</a>
+      <a href="tolemi.html">Local — Tolemi</a>
+      <a href="meta.html">National — Meta</a>
+      <a href="huawei.html">International — Huawei</a>
+      <a href="speaker.html" class="active">Speaker Invitation</a>
+    </nav>
+    <div class="sidebar-footer">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="icon-sun">☀️</span>
+        <span class="icon-moon">🌙</span>
+      </button>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <main class="main">
+    <h1 class="page-title">Speaker Invitation Letter</h1>
+
+    <section class="letter-card">
+      <button class="btn btn-print" onclick="window.print()">🖨️ Print Letter</button>
+
+      <!-- REPLACE LETTER CONTENT BELOW -->
+      <div class="letter-content">
+        <p class="sender-address">
+          Huawei Technologies<br />
+          Data Analytics Team<br />
+          Shenzhen, China
+        </p>
+
+        <p class="letter-date">January 9, 2026</p>
+
+        <p class="recipient-address">
+         Dr. Jeff Hemsley <br />
+          Interim Dean, Associate Professor <br />
+          School of Information Studies <br />
+          343 Hinds Hall<br />   
+          Syracuse, NY 13244
+        </p>
+
+        <p class="greeting">Dear Dr. Jeff Hemsley,</p>
+
+        <p>
+          My name is Jiarong Zhang, and I currently work as a data analyst at Huawei. 
+          I am also a former student of the School of Information Studies at Syracuse University. I am writing to invite you 
+          to speak at one of our upcoming professional development seminars for our analytics and AI teams.
+        </p>
+
+        <p>
+         Our team often invites guest speakers to help connect academic research with real industry practice. 
+         Your work on information flow, social media analytics, and data visualization closely relates to the 
+         problems we face in our daily work. We believe your experience would give our engineers and analysts
+          valuable insight and new perspectives.
+        </p>
+
+        <p>
+          We also hope this visit can create a meaningful exchange between industry and academia. Our teams 
+          work with large-scale, real-world data, and these practical challenges may also be useful for your
+          research. At the same time, we would greatly benefit from learning from your expertise. We see this 
+          as a good opportunity for future collaboration.
+        </p>
+
+        <p>
+          We are happy to provide an honorarium, as well as travel and accommodation support. We understand 
+          that you have a very busy schedule, so we are happy to arrange the event at any time that is most 
+          convenient for you, whether in person or virtually. It would be a pleasure to welcome you to speak 
+          with our team.
+        </p>
+
+        <p>
+          Thank you very much for your time and consideration. I hope we will have the opportunity to host you.
+        </p>
+
+        <p class="closing">
+          Sincerely,<br /><br />
+          <strong>Jiarong Zhang</strong>
+        </p>
+      </div>
+      <!-- END LETTER CONTENT -->
+    </section>
+  </main>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

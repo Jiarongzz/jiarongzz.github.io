@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>National Letter — Meta | Jiarong Zhang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header"><span class="logo">JZ</span></div>
+    <nav>
+      <a href="index.html">Home / Bio</a>
+      <a href="tolemi.html">Local — Tolemi</a>
+      <a href="meta.html" class="active">National — Meta</a>
+      <a href="huawei.html">International — Huawei</a>
+      <a href="speaker.html">Speaker Invitation</a>
+    </nav>
+    <div class="sidebar-footer">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="icon-sun">☀️</span>
+        <span class="icon-moon">🌙</span>
+      </button>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <main class="main">
+    <h1 class="page-title">National Letter — Meta</h1>
+
+    <section class="letter-card">
+      <button class="btn btn-print" onclick="window.print()">🖨️ Print Letter</button>
+
+      <!-- REPLACE LETTER CONTENT BELOW -->
+      <div class="letter-content">
+        <p class="sender-address">
+          Jiarong Zhang<br />
+          123 University Ave<br />
+          Syracuse, NY 13210<br />
+          jzhan199@syr.edu
+        </p>
+
+        <p class="letter-date">January 9, 2026</p>
+
+        <p class="recipient-address">
+          Talent Acquisition Team<br />
+          Meta Platforms, Inc.<br />
+          1 Hacker Way<br />
+          Menlo Park, CA 94025
+        </p>
+
+        <p class="greeting">Dear Hiring Manager,</p>
+
+        <p>
+          I am writing to apply for the AI/ML Research Intern position at Meta. 
+          I am currently a senior at Syracuse University majoring in Applied Data 
+          Science. I have strong training in data analysis, statistics, and data 
+          systems, and I enjoy solving technical problems in a clear and logical way.
+        </p>
+
+        <p>
+          Through my coursework and projects, I have worked with large and messy datasets using
+           Python and SQL. I focus on writing clean code and building efficient solutions. As a 
+           Teaching Assistant for a database systems course, I also explain complex ideas clearly and help others 
+          understand problems step by step. This experience strengthened both my technical and communication skills.
+        </p>
+
+        <p>
+         I am especially interested in Meta’s research-driven environment and high technical standards. I am comfortable working independently, 
+         learning quickly, and contributing to challenging tasks. I hope to bring a careful and reliable approach to your team.
+        </p>
+
+        <p>
+          Thank you for your time and consideration. I look forward to the opportunity to contribute to Meta.
+        </p>
+
+        <p class="closing">
+          Sincerely,<br /><br />
+          <strong>Jiarong Zhang</strong>
+        </p>
+      </div>
+      <!-- END LETTER CONTENT -->
+    </section>
+  </main>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
